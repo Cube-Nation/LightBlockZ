@@ -4,8 +4,8 @@ import com.itsazza.lightblockz.LightBlockZ.Companion.instance
 import de.themoep.inventorygui.GuiElementGroup
 import de.themoep.inventorygui.InventoryGui
 import de.themoep.inventorygui.StaticGuiElement
-import de.tr7zw.changeme.nbtapi.NBTContainer
-import de.tr7zw.changeme.nbtapi.NBTItem
+import de.tr7zw.nbtapi.NBTContainer
+import de.tr7zw.nbtapi.NBTItem
 import org.bukkit.Material
 import org.bukkit.Sound
 import org.bukkit.block.Block

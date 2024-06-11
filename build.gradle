@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.itsazza'
-version = '1.2.4'
+version = '1.3'
 
 repositories {
     mavenCentral()
@@ -18,15 +18,13 @@ repositories {
 dependencies {
     compileOnly 'org.jetbrains.kotlin:kotlin-stdlib:1.6.10'
     compileOnly "org.spigotmc:spigot-api:1.18.2-R0.1-SNAPSHOT"
+    compileOnly "de.tr7zw:item-nbt-api-plugin:2.12.4"
     implementation "de.themoep:inventorygui:1.5-SNAPSHOT"
-    implementation "de.tr7zw:item-nbt-api:2.9.2"
     implementation 'org.bstats:bstats-bukkit:3.0.0'
 }
 
 shadowJar {
     relocate('de.themoep', 'com.itsazza.resources.themoep')
-    relocate('de.tr7zw', 'com.itsazza.resources.item-nbt-api')
     relocate('org.bstats', 'com.itsazza.resources.bstats')
-    archiveName("LightBlockZ.jar")
     minimize()
 }
